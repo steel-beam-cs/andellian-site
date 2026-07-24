@@ -248,6 +248,56 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
+          <div className="site-shell hammer-feature">
+            <div className="hammer-grid">
+              <div className="hammer-image-frame">
+                <Image
+                  alt="The Hammer of Continuity, a humorous fantasy artifact surrounded by editorial notes, parchment, and glowing threads of revision"
+                  className="hammer-image"
+                  height={1024}
+                  sizes="(max-width: 767px) 100vw, 360px"
+                  src="/images/hammer-of-continuity.png"
+                  width={819}
+                />
+              </div>
+              <div className="hammer-copy">
+                <p className="eyebrow">A necessary tool of the trade</p>
+                <h3>The Hammer of Continuity</h3>
+                <p>
+                  Every long fantasy project eventually requires a tool for
+                  settling questions of memory, cause, consequence, and whether
+                  someone was supposed to have lost that locket three chapters
+                  ago.
+                </p>
+                <p>
+                  Ours became the Hammer of Continuity—a joking name for the
+                  stubborn editorial principle that what is established must be
+                  honored, what changes must earn it, and what is promised must
+                  eventually be paid.
+                </p>
+                <p>
+                  It began as a bit of humor, then became a genuine working
+                  method. When a timeline bent, a motivation drifted, or a
+                  callback threatened to go missing, the answer was simple:
+                  bring down the Hammer.
+                </p>
+                <p>
+                  In practice, that meant tracing promises, checking
+                  consequences, guarding payoff, and making sure the story
+                  remembered what it had already said.
+                </p>
+                <p className="hammer-caption">
+                  Forged in the fire of first drafts. Tempered by revision.
+                  Blessed by deadlines.
+                  <span>Wield with care. It remembers everything.</span>
+                </p>
+                <p className="hammer-callout">
+                  “When the tool disagreed, the canon usually won.”
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section

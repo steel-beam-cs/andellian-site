@@ -884,6 +884,70 @@ img {
   width: 100%;
 }
 
+.hammer-feature {
+  border-top: 1px solid rgba(199, 154, 71, 0.14);
+  margin-top: clamp(3rem, 8vw, 5rem);
+  padding-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.hammer-grid {
+  align-items: start;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+}
+
+.hammer-image-frame {
+  border: 1px solid rgba(199, 154, 71, 0.2);
+  max-width: 360px;
+  padding: 0.5rem;
+}
+
+.hammer-image {
+  height: auto;
+  width: 100%;
+}
+
+.hammer-copy h3 {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 1.25rem;
+}
+
+.hammer-copy > p:not(.eyebrow, .hammer-caption, .hammer-callout) {
+  color: #b8b3aa;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0 0 1rem;
+}
+
+.hammer-caption {
+  border-left: 2px solid rgba(199, 154, 71, 0.55);
+  color: var(--ivory);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.45;
+  margin: 1.5rem 0 1rem;
+  padding-left: 1rem;
+}
+
+.hammer-caption span {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.hammer-callout {
+  color: var(--stone);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0;
+}
+
 .mailerlite-form-shell {
   min-height: 120px;
 }
@@ -1281,6 +1345,16 @@ img {
   }
 
   .penelope-image-frame {
+    order: -1;
+  }
+
+  .hammer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hammer-image-frame {
+    margin-inline: auto;
+    max-width: min(100%, 320px);
     order: -1;
   }
 
