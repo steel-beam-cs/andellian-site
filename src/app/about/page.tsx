@@ -231,35 +231,6 @@ export default function AboutPage() {
         </section>
 
         <section
-          className="about-narrative-section section about-collaboration"
-          id="collaboration"
-          aria-labelledby="collaboration-heading"
-        >
-          <div className="site-shell about-collaboration-grid">
-            <div className="about-reading-copy">
-              <p className="eyebrow">An unusual collaboration</p>
-              <h2 id="collaboration-heading">Behind the Forge</h2>
-              <p>
-                <em>Forge and Shadow</em> was developed through a transparent
-                human–AI collaboration. Alexander remained the author and final
-                creative authority, while ChatGPT helped organize, challenge,
-                revise, and preserve the growing continuity of Andellian.
-              </p>
-            </div>
-            <div className="about-forge-portrait-frame">
-              <Image
-                alt="Alexander Dean standing in warm forge light"
-                className="about-forge-portrait"
-                height={1200}
-                sizes="(max-width: 767px) 100vw, 380px"
-                src="/images/alexander-dean-forge-lit.jpg"
-                width={960}
-              />
-            </div>
-          </div>
-        </section>
-
-        <section
           className="section signup-section about-closing-cta"
           aria-labelledby="about-cta-heading"
         >

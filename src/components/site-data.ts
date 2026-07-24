@@ -16,6 +16,7 @@ export const navItems: SiteLink[] = [
     fullDocument: true,
   },
   { label: "About Alexander", href: "/about" },
+  { label: "Behind the Forge", href: "/behind-the-forge" },
 ];
 
 export const footerLinks: SiteLink[] = [
@@ -27,5 +28,6 @@ export const footerLinks: SiteLink[] = [
     fullDocument: true,
   },
   { label: "About Alexander Dean", href: "/about" },
+  { label: "Behind the Forge", href: "/behind-the-forge" },
   { label: "Privacy Policy", href: "/privacy" },
 ];
