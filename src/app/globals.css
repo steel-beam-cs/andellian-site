@@ -1605,6 +1605,17 @@ img {
   padding-top: 1.25rem;
 }
 
+.forge-evidence-card blockquote .evidence-secondary-note {
+  border-top: 1px solid rgba(199, 154, 71, 0.14);
+  color: var(--gold-bright);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  margin-top: 1.4rem;
+  padding-top: 1.25rem;
+  text-transform: uppercase;
+}
+
 .forge-evidence-card blockquote p:last-child {
   margin-bottom: 0;
 }

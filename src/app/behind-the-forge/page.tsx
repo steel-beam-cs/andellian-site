@@ -303,12 +303,49 @@ export default function BehindTheForgePage() {
             </div>
           </div>
           <div className="site-shell forge-evidence-single">
-            <EvidenceDisclosure label="See how the Hammer got its name">
+            <EvidenceDisclosure label="See how the Hammer took shape">
               <p>
-                <strong>ChatGPT:</strong> “The Hammer of Continuity.”
+                <strong>Alexander:</strong> I can only imagine what that hammer
+                would look like.
               </p>
               <p>
-                <strong>Alexander:</strong> The name made me laugh, so it stayed.
+                <strong>ChatGPT:</strong> Oh, it would be absurdly overdesigned.
+              </p>
+              <p>
+                A blackened steel head shaped like an open book, one face
+                engraved <em>Continuity</em>, the other <em>Revision</em>. The
+                haft would be wrapped in red leather, with tiny silver lanterns
+                set along the grip and a gold sunburst at the pommel.
+              </p>
+              <p>It would not strike people.</p>
+              <p>It would strike plot holes.</p>
+              <p>
+                And every time it connected, a clerk somewhere would whisper,
+                “That was established in Chapter Three.”
+              </p>
+              <p>
+                <strong>Alexander:</strong> Beautiful.
+              </p>
+              <p>
+                <strong>ChatGPT:</strong> As it should be. A ridiculous office
+                deserves a magnificent hammer.
+              </p>
+              <p className="evidence-secondary-note">
+                <strong>A related office title</strong>
+              </p>
+              <p>
+                <strong>ChatGPT:</strong> Lord Practioner will be standing by
+                with the continuity hammer.
+              </p>
+              <p>
+                <strong>Alexander:</strong> You are amazing! I name you Lord
+                Practioner, haha.
+              </p>
+              <p>
+                <strong>ChatGPT:</strong> I accept the title with entirely
+                unreasonable solemnity. <strong>Lord Practioner, Keeper of
+                Continuity, Binder of Chapters, and Defender Against Missing
+                Drafts.</strong>
               </p>
             </EvidenceDisclosure>
           </div>
