@@ -205,8 +205,8 @@ export default function Home() {
               <p className="tagline">
                 Fifteen years imagined. Forged through human–AI collaboration.
               </p>
-              <Link className="text-link" href="/about#collaboration">
-                Read the Collaboration Note
+              <Link className="text-link" href="/behind-the-forge">
+                Go Behind the Forge
                 <ArrowIcon />
               </Link>
             </div>

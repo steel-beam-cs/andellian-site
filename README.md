@@ -29,13 +29,13 @@ npm run build
 - **`/privacy`** contains the approved privacy policy.
 - **`/forge-and-shadow`** contains the approved blurb, rabbit engraving vignette,
   and complete Chapter Fifteen excerpt.
-- **`/about`** is implemented with the clean portrait at the opening and the
-  forge-lit portrait for the collaboration section.
+- **`/about`** is implemented with the clean portrait and author story.
+- **`/behind-the-forge`** contains the approved collaboration, continuity,
+  production, and transparency narrative.
 - The River's Crest landscape belongs to `/explore-andellian`.
 - Princess Penelope belongs to `/about`.
-- The Hammer of Continuity image asset is reserved for a future Behind the
-  Forge page.
-- Behind the Forge is intentionally absent from navigation until developed.
+- The Hammer of Continuity image is featured on Behind the Forge.
+- Behind the Forge is linked from primary, mobile, and footer navigation.
 - The homepage author portraits have been intentionally removed.
 - The Behind the Forge section uses the approved quiet forge illustration.
 - Approved Andellian Press mark, full logo, and favicon assets are installed
