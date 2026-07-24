@@ -1,6 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
-import { navItems } from "@/components/site-data";
+import { FREE_TALE_HREF, navItems } from "@/components/site-data";
+
+function NavAnchor({
+  className,
+  fullDocument,
+  href,
+  children,
+}: {
+  className?: string;
+  fullDocument?: boolean;
+  href: string;
+  children: React.ReactNode;
+}) {
+  if (fullDocument) {
+    return (
+      <a className={className} href={href}>
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link className={className} href={href}>
+      {children}
+    </Link>
+  );
+}
 
 export function SiteHeader() {
   return (
@@ -20,15 +46,19 @@ export function SiteHeader() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           <Link href="/">Home</Link>
           {navItems.map((item) => (
-            <Link href={item.href} key={item.label}>
+            <NavAnchor
+              fullDocument={item.fullDocument}
+              href={item.href}
+              key={item.label}
+            >
               {item.label}
-            </Link>
+            </NavAnchor>
           ))}
         </nav>
 
-        <Link className="button button-small header-cta" href="/#enter-andellian">
+        <a className="button button-small header-cta" href={FREE_TALE_HREF}>
           Receive a Free Tale
-        </Link>
+        </a>
 
         <details className="mobile-menu">
           <summary aria-label="Open navigation menu">
@@ -39,9 +69,13 @@ export function SiteHeader() {
           <nav aria-label="Mobile navigation">
             <Link href="/">Home</Link>
             {navItems.map((item) => (
-              <Link href={item.href} key={item.label}>
+              <NavAnchor
+                fullDocument={item.fullDocument}
+                href={item.href}
+                key={item.label}
+              >
                 {item.label}
-              </Link>
+              </NavAnchor>
             ))}
           </nav>
         </details>

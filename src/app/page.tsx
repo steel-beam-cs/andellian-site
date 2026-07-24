@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowIcon } from "@/components/arrow-icon";
-import { NewsletterForm } from "@/components/newsletter-form";
+import { FREE_TALE_HREF, TALES_HREF } from "@/components/site-data";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
@@ -55,9 +55,9 @@ export default function Home() {
                   Discover Forge and Shadow
                   <ArrowIcon />
                 </Link>
-                <Link className="button button-ghost" href="#enter-andellian">
+                <a className="button button-ghost" href={FREE_TALE_HREF}>
                   Receive a Free Tale
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -115,72 +115,8 @@ export default function Home() {
           </div>
         </section>
 
-        <figure className="landscape">
-          <div className="site-shell">
-            <div className="landscape-frame">
-              <Image
-                alt="River’s Crest before the dead came, with Artur’s Span crossing the river, Fenn fishing, Arden at the forge, and Nelly nearby"
-                height={1024}
-                sizes="(max-width: 1280px) 100vw, 1240px"
-                src="/images/rivers-crest-before-the-dead-came.png"
-                width={1536}
-              />
-            </div>
-            <figcaption>River’s Crest, before the dead came.</figcaption>
-          </div>
-        </figure>
-
-        <section
-          className="section signup-section"
-          id="enter-andellian"
-          aria-labelledby="signup-heading"
-        >
-          <div className="site-shell signup-grid">
-            <div>
-              <p className="eyebrow">A Tale of the Stranger awaits</p>
-              <h2 id="signup-heading">Enter Andellian</h2>
-              <p className="signup-lede">
-                Join Alexander Dean’s mailing list and receive{" "}
-                <em>The Eighth Morning of Bellweather</em>, a free{" "}
-                <em>Tale of the Stranger</em>.
-              </p>
-              <p>
-                You’ll also receive new stories, lore, maps, excerpts, and
-                behind-the-scenes news from <em>The Scar of Andellian</em>
-                —including <em>The Troll of Tarken</em> four weeks after you
-                join.
-              </p>
-            </div>
-
-            <div className="signup-card">
-              <NewsletterForm />
-              <p className="small-print">
-                No guarantee the stories are true. No endless tavern notices.
-                Unsubscribe anytime. By subscribing, you agree to receive emails
-                from Alexander Dean and Andellian Press. See our{" "}
-                <Link href="/privacy">Privacy Policy</Link>.
-              </p>
-              <ol className="delivery-list" aria-label="Tale delivery sequence">
-                <li>
-                  <span>Immediately</span>
-                  <em>The Eighth Morning of Bellweather</em>
-                </li>
-                <li>
-                  <span>About four weeks later</span>
-                  <em>The Troll of Tarken</em>
-                </li>
-                <li>
-                  <span>Post-launch reward</span>
-                  <em>The Lantern in Blackwater</em>
-                </li>
-              </ol>
-            </div>
-          </div>
-        </section>
-
         <section
           className="section world-section"
-          id="world"
           aria-labelledby="world-heading"
         >
           <div className="world-ornament" aria-hidden="true">
@@ -188,17 +124,17 @@ export default function Home() {
           </div>
           <div className="site-shell world-inner">
             <p className="eyebrow">Old gods. Dangerous Graces. Forgotten oaths.</p>
-            <h2 id="world-heading">The World of Andellian</h2>
+            <h2 id="world-heading">Explore Andellian</h2>
             <p>
               Beyond River’s Crest lies a world shaped by old gods, dangerous
               Graces, forgotten oaths, and histories that change depending on
               who tells them.
             </p>
             <p>
-              Explore its realms, faiths, creatures, maps, and Tales of the
-              Stranger—without spoiling the journey ahead.
+              Begin with a spoiler-safe look at its roads, realms, creatures,
+              rumors, and the places waiting beyond the first novel.
             </p>
-            <Link className="button button-teal" href="#enter-andellian">
+            <Link className="button button-teal" href="/explore-andellian">
               Explore Andellian
               <ArrowIcon />
             </Link>
@@ -206,8 +142,35 @@ export default function Home() {
         </section>
 
         <section
+          className="section tales-preview-section"
+          aria-labelledby="tales-preview-heading"
+        >
+          <div className="site-shell reading-column">
+            <p className="eyebrow">Stories from beyond the main road</p>
+            <h2 id="tales-preview-heading">Tales of the Stranger</h2>
+            <p>
+              Not every story belongs to the history books.
+            </p>
+            <p>
+              Discover standalone tales, doubtful accounts, old rumors, and small
+              corners of Andellian—including <em>The Eighth Morning of Bellweather</em>,
+              available free to new readers.
+            </p>
+            <div className="button-row">
+              <a className="button" href={FREE_TALE_HREF}>
+                Receive the Free Tale
+                <ArrowIcon />
+              </a>
+              <a className="text-link" href={TALES_HREF}>
+                Explore the Tales
+                <ArrowIcon />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section
           className="section story-section"
-          id="behind-the-forge"
           aria-labelledby="forge-heading"
         >
           <div className="site-shell editorial-grid">
@@ -242,60 +205,10 @@ export default function Home() {
               <p className="tagline">
                 Fifteen years imagined. Forged through human–AI collaboration.
               </p>
-              <Link className="text-link" href="#about">
-                See How It Was Forged
+              <Link className="text-link" href="/about#collaboration">
+                Read the Collaboration Note
                 <ArrowIcon />
               </Link>
-            </div>
-          </div>
-
-          <div className="site-shell hammer-feature">
-            <div className="hammer-grid">
-              <div className="hammer-image-frame">
-                <Image
-                  alt="The Hammer of Continuity, a humorous fantasy artifact surrounded by editorial notes, parchment, and glowing threads of revision"
-                  className="hammer-image"
-                  height={1024}
-                  sizes="(max-width: 767px) 100vw, 360px"
-                  src="/images/hammer-of-continuity.png"
-                  width={819}
-                />
-              </div>
-              <div className="hammer-copy">
-                <p className="eyebrow">A necessary tool of the trade</p>
-                <h3>The Hammer of Continuity</h3>
-                <p>
-                  Every long fantasy project eventually requires a tool for
-                  settling questions of memory, cause, consequence, and whether
-                  someone was supposed to have lost that locket three chapters
-                  ago.
-                </p>
-                <p>
-                  Ours became the Hammer of Continuity—a joking name for the
-                  stubborn editorial principle that what is established must be
-                  honored, what changes must earn it, and what is promised must
-                  eventually be paid.
-                </p>
-                <p>
-                  It began as a bit of humor, then became a genuine working
-                  method. When a timeline bent, a motivation drifted, or a
-                  callback threatened to go missing, the answer was simple:
-                  bring down the Hammer.
-                </p>
-                <p>
-                  In practice, that meant tracing promises, checking
-                  consequences, guarding payoff, and making sure the story
-                  remembered what it had already said.
-                </p>
-                <p className="hammer-caption">
-                  Forged in the fire of first drafts. Tempered by revision.
-                  Blessed by deadlines.
-                  <span>Wield with care. It remembers everything.</span>
-                </p>
-                <p className="hammer-callout">
-                  “When the tool disagreed, the canon usually won.”
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -332,31 +245,6 @@ export default function Home() {
                 Meet Alexander Dean
                 <ArrowIcon />
               </Link>
-            </div>
-
-            <div className="penelope-feature">
-              <p className="eyebrow">The trusty steed</p>
-              <h3>Princess Penelope Pennyworth the Third</h3>
-              <div className="penelope-grid">
-                <div className="penelope-image-frame">
-                  <Image
-                    alt="Princess Penelope Pennyworth the Third, Alexander Dean’s Yorkshire terrier, smiling beside her toy"
-                    className="penelope-image"
-                    height={800}
-                    sizes="(max-width: 767px) 100vw, 360px"
-                    src="/images/princess-penelope-feature.jpg"
-                    width={640}
-                  />
-                </div>
-                <div className="penelope-copy">
-                  <blockquote>Every author needs a trusty steed.</blockquote>
-                  <p>
-                    Alexander’s is Princess Penelope Pennyworth the Third—eight
-                    pounds of Yorkshire terror, loyal companion, household
-                    supervisor, and occasional guardian of the forge.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>

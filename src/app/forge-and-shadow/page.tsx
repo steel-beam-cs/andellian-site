@@ -84,9 +84,9 @@ export default function ForgeAndShadowPage() {
                   Read the Chapter Fifteen Excerpt
                   <ArrowIcon />
                 </a>
-                <Link className="button button-ghost" href="/#enter-andellian">
+                <a className="button button-ghost" href="/tales-of-the-stranger#free-tale">
                   Receive a Free Tale
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -279,10 +279,10 @@ export default function ForgeAndShadowPage() {
               excerpts, maps, and publication news.
             </p>
             <div className="button-row">
-              <Link className="button" href="/#enter-andellian">
+              <a className="button" href="/tales-of-the-stranger#free-tale">
                 Receive the Free Tale
                 <ArrowIcon />
-              </Link>
+              </a>
             </div>
             <p className="book-cta-return">
               <Link className="text-link" href="/">

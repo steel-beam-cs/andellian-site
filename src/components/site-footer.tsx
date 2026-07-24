@@ -1,6 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import { footerLinks } from "@/components/site-data";
+import { FREE_TALE_HREF, footerLinks } from "@/components/site-data";
+
+function FooterAnchor({
+  fullDocument,
+  href,
+  children,
+}: {
+  fullDocument?: boolean;
+  href: string;
+  children: React.ReactNode;
+}) {
+  if (fullDocument) {
+    return <a href={href}>{children}</a>;
+  }
+
+  return <Link href={href}>{children}</Link>;
+}
 
 export function SiteFooter() {
   return (
@@ -23,9 +39,13 @@ export function SiteFooter() {
           <h2>Explore</h2>
           <nav aria-label="Footer navigation">
             {footerLinks.map((item) => (
-              <Link href={item.href} key={item.label}>
+              <FooterAnchor
+                fullDocument={item.fullDocument}
+                href={item.href}
+                key={item.label}
+              >
                 {item.label}
-              </Link>
+              </FooterAnchor>
             ))}
           </nav>
         </div>
@@ -35,9 +55,9 @@ export function SiteFooter() {
             Receive <em>The Eighth Morning of Bellweather</em>, a free{" "}
             <em>Tale of the Stranger</em>.
           </p>
-          <Link className="button button-small" href="/#enter-andellian">
+          <a className="button button-small" href={FREE_TALE_HREF}>
             Receive the Free Tale
-          </Link>
+          </a>
         </div>
       </div>
       <div className="site-shell footer-base">

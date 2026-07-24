@@ -245,10 +245,6 @@ export default function AboutPage() {
                 creative authority, while ChatGPT helped organize, challenge,
                 revise, and preserve the growing continuity of Andellian.
               </p>
-              <Link className="text-link" href="/#behind-the-forge">
-                See How It Was Forged
-                <ArrowIcon />
-              </Link>
             </div>
             <div className="about-forge-portrait-frame">
               <Image
@@ -276,10 +272,10 @@ export default function AboutPage() {
               excerpts, and publication news.
             </p>
             <div className="button-row">
-              <Link className="button" href="/#enter-andellian">
+              <a className="button" href="/tales-of-the-stranger#free-tale">
                 Receive the Free Tale
                 <ArrowIcon />
-              </Link>
+              </a>
             </div>
             <p className="book-cta-return">
               <Link className="text-link" href="/forge-and-shadow">

@@ -884,68 +884,57 @@ img {
   width: 100%;
 }
 
-.hammer-feature {
-  border-top: 1px solid rgba(199, 154, 71, 0.14);
-  margin-top: clamp(3rem, 8vw, 5rem);
-  padding-top: clamp(2.5rem, 6vw, 4rem);
+.explore-page,
+.tales-page {
+  background: var(--charcoal);
 }
 
-.hammer-grid {
-  align-items: start;
+.explore-hero,
+.tales-hero {
+  background: #14161b;
+}
+
+.explore-block-grid {
   display: grid;
-  gap: clamp(1.5rem, 4vw, 2.5rem);
-  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(1.5rem, 4vw, 2rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
 }
 
-.hammer-image-frame {
-  border: 1px solid rgba(199, 154, 71, 0.2);
-  max-width: 360px;
-  padding: 0.5rem;
+.explore-block {
+  background: rgba(27, 30, 36, 0.55);
+  border: 1px solid rgba(199, 154, 71, 0.16);
+  padding: clamp(1.25rem, 3vw, 1.75rem);
 }
 
-.hammer-image {
-  height: auto;
-  width: 100%;
-}
-
-.hammer-copy h3 {
+.explore-block h3 {
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-size: 1.35rem;
   font-weight: 500;
-  line-height: 1.1;
-  margin: 0 0 1.25rem;
+  line-height: 1.15;
+  margin: 0 0 0.85rem;
 }
 
-.hammer-copy > p:not(.eyebrow, .hammer-caption, .hammer-callout) {
-  color: #b8b3aa;
+.explore-block p {
+  color: #c0bbb2;
   font-size: 1rem;
-  line-height: 1.75;
-  margin: 0 0 1rem;
-}
-
-.hammer-caption {
-  border-left: 2px solid rgba(199, 154, 71, 0.55);
-  color: var(--ivory);
-  font-family: var(--font-display), Georgia, serif;
-  font-size: 1.15rem;
-  font-style: italic;
-  line-height: 1.45;
-  margin: 1.5rem 0 1rem;
-  padding-left: 1rem;
-}
-
-.hammer-caption span {
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.hammer-callout {
-  color: var(--stone);
-  font-family: var(--font-display), Georgia, serif;
-  font-size: 1.05rem;
-  font-style: italic;
-  line-height: 1.4;
+  line-height: 1.7;
   margin: 0;
+}
+
+.tales-preview-section {
+  background: var(--iron);
+}
+
+.tales-preview-section .button-row {
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.explore-closing,
+.tales-closing {
+  border-top: 1px solid rgba(199, 154, 71, 0.12);
 }
 
 .mailerlite-form-shell {
@@ -1593,14 +1582,8 @@ img {
     order: -1;
   }
 
-  .hammer-grid {
+  .explore-block-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hammer-image-frame {
-    margin-inline: auto;
-    max-width: min(100%, 320px);
-    order: -1;
   }
 
   .about-hero-grid,
