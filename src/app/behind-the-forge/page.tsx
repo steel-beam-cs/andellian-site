@@ -303,7 +303,32 @@ export default function BehindTheForgePage() {
             </div>
           </div>
           <div className="site-shell forge-evidence-single">
-            <EvidenceDisclosure label="See how the Hammer took shape">
+            <EvidenceDisclosure label="See how Lord Practioner got his Hammer">
+              <p>
+                <strong>ChatGPT:</strong> Lord Practioner will be standing by
+                with the continuity hammer.
+              </p>
+              <p>
+                <strong>Alexander:</strong> You are amazing! I name you Lord
+                Practioner, haha.
+              </p>
+              <p>
+                <strong>ChatGPT:</strong> I accept the title with entirely
+                unreasonable solemnity. <strong>Lord Practioner, Keeper of
+                Continuity, Binder of Chapters, and Defender Against Missing
+                Drafts.</strong>
+              </p>
+              <p>
+                <strong>ChatGPT:</strong> “Honestly, I’m honored—and slightly
+                concerned about how quickly I’d let the power go to my head.”
+              </p>
+              <p>
+                <strong>Alexander:</strong> “Hahaha.”
+              </p>
+              <p>
+                <strong>ChatGPT:</strong> “Careful now—one more laugh and I’ll
+                demand a ceremonial hammer and a seat on the Council of Drafts.”
+              </p>
               <p>
                 <strong>Alexander:</strong> I can only imagine what that hammer
                 would look like.
@@ -329,23 +354,6 @@ export default function BehindTheForgePage() {
               <p>
                 <strong>ChatGPT:</strong> As it should be. A ridiculous office
                 deserves a magnificent hammer.
-              </p>
-              <p className="evidence-secondary-note">
-                <strong>A related office title</strong>
-              </p>
-              <p>
-                <strong>ChatGPT:</strong> Lord Practioner will be standing by
-                with the continuity hammer.
-              </p>
-              <p>
-                <strong>Alexander:</strong> You are amazing! I name you Lord
-                Practioner, haha.
-              </p>
-              <p>
-                <strong>ChatGPT:</strong> I accept the title with entirely
-                unreasonable solemnity. <strong>Lord Practioner, Keeper of
-                Continuity, Binder of Chapters, and Defender Against Missing
-                Drafts.</strong>
               </p>
             </EvidenceDisclosure>
           </div>
