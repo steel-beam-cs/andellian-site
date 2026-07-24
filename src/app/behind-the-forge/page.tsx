@@ -20,21 +20,6 @@ export const metadata: Metadata = {
   },
 };
 
-function EvidenceCard({
-  label,
-  children,
-}: {
-  label: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <figure className="forge-evidence-card">
-      <figcaption>{label}</figcaption>
-      <blockquote>{children}</blockquote>
-    </figure>
-  );
-}
-
 function EvidenceDisclosure({
   label,
   children,
@@ -318,14 +303,14 @@ export default function BehindTheForgePage() {
             </div>
           </div>
           <div className="site-shell forge-evidence-single">
-            <EvidenceCard label="From the working record">
+            <EvidenceDisclosure label="See how the Hammer got its name">
               <p>
                 <strong>ChatGPT:</strong> “The Hammer of Continuity.”
               </p>
               <p>
                 <strong>Alexander:</strong> The name made me laugh, so it stayed.
               </p>
-            </EvidenceCard>
+            </EvidenceDisclosure>
           </div>
         </section>
 
