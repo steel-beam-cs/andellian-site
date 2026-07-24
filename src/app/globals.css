@@ -1619,32 +1619,18 @@ img {
   margin: 0;
 }
 
-.proof-placeholder {
-  align-items: center;
+.proof-image-frame {
   aspect-ratio: 4 / 3;
-  background:
-    linear-gradient(135deg, transparent 46%, rgba(199, 154, 71, 0.2) 47%, rgba(199, 154, 71, 0.2) 53%, transparent 54%),
-    #15181d;
+  background: #15181d;
   border: 1px solid rgba(199, 154, 71, 0.25);
-  color: rgba(227, 189, 112, 0.5);
-  display: flex;
-  font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(2rem, 5vw, 4rem);
-  justify-content: center;
-  letter-spacing: 0.12em;
+  overflow: hidden;
 }
 
-.proof-book {
-  background:
-    linear-gradient(90deg, transparent 48%, rgba(199, 154, 71, 0.25) 49%, rgba(199, 154, 71, 0.25) 51%, transparent 52%),
-    #15181d;
-}
-
-.proof-map {
-  background:
-    radial-gradient(circle at 30% 40%, rgba(61, 119, 120, 0.3), transparent 24%),
-    radial-gradient(circle at 72% 65%, rgba(166, 95, 50, 0.25), transparent 22%),
-    #15181d;
+.proof-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .proof-sequence figcaption {

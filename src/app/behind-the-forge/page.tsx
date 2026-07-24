@@ -530,7 +530,16 @@ export default function BehindTheForgePage() {
           </div>
           <div className="site-shell proof-sequence" aria-label="Production evidence">
             <figure>
-              <div className="proof-placeholder" aria-hidden="true">KDP</div>
+              <div className="proof-image-frame">
+                <Image
+                  src="/images/behind-the-forge-kdp-preview-margin.png"
+                  alt="KDP Previewer spread showing the manuscript text inside the dotted safety lines with a narrow-looking inside margin at the gutter"
+                  width={1060}
+                  height={795}
+                  sizes="(max-width: 767px) 100vw, 33vw"
+                  className="proof-image"
+                />
+              </div>
               <figcaption>
                 <strong>The warning before print.</strong> The text remained
                 inside KDP&apos;s safety lines, but the inside margin still
@@ -538,7 +547,16 @@ export default function BehindTheForgePage() {
               </figcaption>
             </figure>
             <figure>
-              <div className="proof-placeholder proof-book" aria-hidden="true">PROOF</div>
+              <div className="proof-image-frame">
+                <Image
+                  src="/images/behind-the-forge-corrected-proof.jpg"
+                  alt="Corrected physical proof of Forge and Shadow open to pages 35 and 36 with the rebuilt inside margins visible"
+                  width={1440}
+                  height={1080}
+                  sizes="(max-width: 767px) 100vw, 33vw"
+                  className="proof-image"
+                />
+              </div>
               <figcaption>
                 <strong>The corrected physical proof.</strong> The first printed
                 copy disagreed with the digital safety lines. After rebuilding
@@ -546,7 +564,16 @@ export default function BehindTheForgePage() {
               </figcaption>
             </figure>
             <figure>
-              <div className="proof-placeholder proof-map" aria-hidden="true">MAP</div>
+              <div className="proof-image-frame">
+                <Image
+                  src="/images/behind-the-forge-printed-map.jpg"
+                  alt="Printed regional map titled The Lands of Forge and Shadow inside the physical paperback proof"
+                  width={1440}
+                  height={1080}
+                  sizes="(max-width: 767px) 100vw, 33vw"
+                  className="proof-image"
+                />
+              </div>
               <figcaption>
                 <strong>The finished map in print.</strong> A nearly blank page
                 became an opportunity to add something the book genuinely
