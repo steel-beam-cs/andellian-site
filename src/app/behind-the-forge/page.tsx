@@ -35,6 +35,21 @@ function EvidenceCard({
   );
 }
 
+function EvidenceDisclosure({
+  label,
+  children,
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <details className="forge-evidence-card forge-evidence-disclosure">
+      <summary>{label}</summary>
+      <blockquote>{children}</blockquote>
+    </details>
+  );
+}
+
 export default function BehindTheForgePage() {
   return (
     <>
@@ -378,26 +393,61 @@ export default function BehindTheForgePage() {
             </blockquote>
           </div>
           <div className="site-shell forge-evidence-grid">
-            <EvidenceCard label="Placement, not defeat">
+            <EvidenceDisclosure label="Read the Bellweather–Tarken exchange">
               <p>
-                <strong>ChatGPT:</strong> Tarken may be the clearer introduction.
+                <strong>ChatGPT:</strong> I would lead with <em>The Troll of
+                Tarken</em>. It gives readers the clearest introduction to
+                Andellian&apos;s broader fantasy identity.
               </p>
               <p>
                 <strong>Alexander:</strong> Bellweather is stranger—and more
-                revealing of the world&apos;s range.
+                revealing of the world&apos;s range. It shows readers that
+                Andellian can surprise them before asking them to enter the
+                novel.
+              </p>
+              <p>
+                <strong>ChatGPT:</strong> Then Bellweather can serve as the
+                signup story, with Tarken moved into the later reader sequence.
+              </p>
+              <p>
+                <strong>Alexander:</strong> Bellweather.
               </p>
               <p className="evidence-outcome">Outcome: Bellweather first; Tarken later.</p>
-            </EvidenceCard>
-            <EvidenceCard label="The author overrules the finding">
+            </EvidenceDisclosure>
+            <EvidenceDisclosure label="See the continuity correction">
               <p>
-                <strong>Continuity review:</strong> Four apparent breaks.
+                <strong>Continuity review:</strong> The hammer appears to be
+                missing before it is recovered.
               </p>
               <p>
-                <strong>Canon review:</strong> Four intentional or already
-                established details.
+                <strong>Alexander:</strong> The recovery had already been
+                established.
               </p>
-              <p className="evidence-outcome">Outcome: the record was corrected.</p>
-            </EvidenceCard>
+              <p>
+                <strong>Continuity review:</strong> The event appears to happen
+                after a delay.
+              </p>
+              <p>
+                <strong>Alexander:</strong> It happened immediately.
+              </p>
+              <p>
+                <strong>Continuity review:</strong> The character&apos;s
+                religious status appears inconsistent.
+              </p>
+              <p>
+                <strong>Alexander:</strong> He had already made that religious
+                choice.
+              </p>
+              <p>
+                <strong>Continuity review:</strong> The name appears to be
+                misspelled.
+              </p>
+              <p>
+                <strong>Alexander:</strong> The odd spelling is deliberate
+                personal speech.
+              </p>
+              <p className="evidence-outcome">Outcome: The record was corrected.</p>
+            </EvidenceDisclosure>
           </div>
         </section>
 

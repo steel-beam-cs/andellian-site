@@ -1574,6 +1574,46 @@ img {
   margin: 0 0 0.8rem;
 }
 
+.forge-evidence-disclosure > summary {
+  align-items: center;
+  color: var(--gold-bright);
+  cursor: pointer;
+  display: flex;
+  font-size: 0.95rem;
+  font-weight: 600;
+  gap: 1rem;
+  justify-content: space-between;
+  letter-spacing: 0.04em;
+  list-style: none;
+}
+
+.forge-evidence-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.forge-evidence-disclosure > summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.forge-evidence-disclosure[open] > summary::after {
+  content: "−";
+}
+
+.forge-evidence-disclosure > summary:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 4px;
+}
+
+.forge-evidence-disclosure[open] > blockquote {
+  border-top: 1px solid rgba(199, 154, 71, 0.14);
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+}
+
 .forge-evidence-card blockquote p:last-child {
   margin-bottom: 0;
 }
