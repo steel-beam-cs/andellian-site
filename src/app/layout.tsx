@@ -15,6 +15,7 @@ const body = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://andellian.com"),
   title: "Andellian | Forge and Shadow by Alexander Dean",
   description:
     "Enter the world of Andellian. Discover Forge and Shadow, receive a free Tale of the Stranger, and explore fantasy lore, maps, and the story behind the human–AI collaboration.",
