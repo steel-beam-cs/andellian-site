@@ -328,7 +328,7 @@ export default function Home() {
                 trusty steed, Princess Penelope Pennyworth the Third—eight
                 pounds of Yorkshire terror.
               </p>
-              <Link className="button button-ghost" href="mailto:contact@andellian.com">
+              <Link className="button button-ghost" href="/about">
                 Meet Alexander Dean
                 <ArrowIcon />
               </Link>

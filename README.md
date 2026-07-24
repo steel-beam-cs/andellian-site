@@ -28,6 +28,11 @@ npm run build
 - **`/privacy`** contains the approved privacy policy.
 - **`/forge-and-shadow`** contains the approved blurb, rabbit engraving vignette,
   and complete Chapter Fifteen excerpt.
+- **`/about`** is implemented with the clean portrait at the opening and the
+  forge-lit portrait for the collaboration section.
+- *The Posts That Started It* includes the three lightly edited original Facebook
+  stories with accessible full-story disclosures.
+- Homepage and shared navigation route About links to `/about`.
 - The homepage author portraits have been intentionally removed.
 - The Behind the Forge section uses the approved quiet forge illustration.
 - Approved Andellian Press mark, full logo, and favicon assets are installed
@@ -38,5 +43,6 @@ npm run build
 ## Routes
 
 - `/` — homepage
+- `/about` — author page with origin stories
 - `/forge-and-shadow` — book page with approved excerpt
 - `/privacy` — privacy policy
