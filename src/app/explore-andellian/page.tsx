@@ -113,6 +113,53 @@ export default function ExploreAndellianPage() {
         </section>
 
         <section
+          className="faith-gateway"
+          aria-labelledby="faith-gateway-heading"
+        >
+          <div className="faith-gateway-banner" aria-hidden="true">
+            <Image
+              alt=""
+              fill
+              sizes="100vw"
+              src="/images/faith-light-darkness-banner.webp"
+            />
+          </div>
+          <div className="site-shell faith-gateway-content">
+            <p className="eyebrow">Faith and the Divine</p>
+            <h2 id="faith-gateway-heading">Two Histories. One World.</h2>
+            <p className="faith-gateway-intro">
+              In Andellian, faith is not merely a matter of worship. It shapes
+              law, memory, power, and the histories each generation inherits.
+              The Temples of Light and Darkness tell the same world in very
+              different ways.
+            </p>
+            <p>
+              Neither account is offered here as the whole truth. Enter one,
+              then hear the other.
+            </p>
+            <div className="faith-gateway-actions">
+              <Link className="faith-choice faith-choice-light" href="/faith/light">
+                <span>Temple of Light</span>
+                <strong>
+                  Enter the Light
+                  <ArrowIcon />
+                </strong>
+              </Link>
+              <Link
+                className="faith-choice faith-choice-dark"
+                href="/faith/darkness"
+              >
+                <span>Temple of Darkness</span>
+                <strong>
+                  Hear the Other History
+                  <ArrowIcon />
+                </strong>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section
           className="section explore-closing"
           aria-labelledby="explore-closing-heading"
         >

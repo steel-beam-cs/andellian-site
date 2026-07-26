@@ -937,6 +937,263 @@ img {
   border-top: 1px solid rgba(199, 154, 71, 0.12);
 }
 
+.faith-gateway {
+  background: #0d0d12;
+  border-block: 1px solid rgba(199, 154, 71, 0.18);
+  overflow: hidden;
+  position: relative;
+}
+
+.faith-gateway-banner {
+  aspect-ratio: 16 / 9;
+  max-height: 34rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.faith-gateway-banner::after {
+  background: linear-gradient(
+    180deg,
+    transparent 45%,
+    rgba(13, 13, 18, 0.9) 88%,
+    #0d0d12 100%
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.faith-gateway-banner img {
+  object-fit: cover;
+}
+
+.faith-gateway-content {
+  margin-top: clamp(-8rem, -10vw, -4rem);
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.faith-gateway-content h2,
+.faith-page h1,
+.faith-account h2,
+.faith-between h2 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 500;
+}
+
+.faith-gateway-content h2 {
+  font-size: clamp(2.7rem, 6vw, 5.5rem);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.faith-gateway-content > p:not(.eyebrow) {
+  color: #c8c1b7;
+  font-size: clamp(1rem, 1.6vw, 1.16rem);
+  line-height: 1.75;
+  margin: 1rem auto 0;
+  max-width: 46rem;
+}
+
+.faith-gateway-content .faith-gateway-intro {
+  color: var(--ivory);
+  margin-top: 1.8rem;
+}
+
+.faith-gateway-actions {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 2.75rem auto 0;
+  max-width: 58rem;
+}
+
+.faith-choice {
+  border: 1px solid rgba(242, 235, 221, 0.16);
+  display: grid;
+  gap: 0.7rem;
+  min-height: 9rem;
+  padding: 1.7rem;
+  place-content: center;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.faith-choice span {
+  color: #bdb6ac;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.faith-choice strong {
+  align-items: center;
+  display: flex;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  font-weight: 500;
+  gap: 0.65rem;
+  justify-content: center;
+}
+
+.faith-choice:hover,
+.faith-choice:focus-visible {
+  transform: translateY(-2px);
+}
+
+.faith-choice-light {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(227, 189, 112, 0.18), transparent 65%),
+    #17150f;
+}
+
+.faith-choice-light:hover,
+.faith-choice-light:focus-visible {
+  border-color: rgba(227, 189, 112, 0.6);
+  box-shadow: 0 16px 34px rgba(199, 154, 71, 0.12);
+}
+
+.faith-choice-dark {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(91, 64, 116, 0.22), transparent 65%),
+    #121017;
+}
+
+.faith-choice-dark:hover,
+.faith-choice-dark:focus-visible {
+  border-color: rgba(165, 139, 184, 0.55);
+  box-shadow: 0 16px 34px rgba(65, 46, 81, 0.18);
+}
+
+.faith-page {
+  --faith-accent: var(--gold-bright);
+  --faith-muted: #c9c1b5;
+  background: #111318;
+}
+
+.faith-page-dark {
+  --faith-accent: #c0a9d1;
+  --faith-muted: #c4bacb;
+  background: #0e0d13;
+}
+
+.faith-hero {
+  background:
+    radial-gradient(circle at 75% 42%, rgba(199, 154, 71, 0.19), transparent 32%),
+    linear-gradient(115deg, #1b1810, #111318 64%);
+  border-bottom: 1px solid rgba(199, 154, 71, 0.18);
+}
+
+.faith-page-dark .faith-hero {
+  background:
+    radial-gradient(circle at 75% 42%, rgba(105, 75, 128, 0.24), transparent 34%),
+    linear-gradient(115deg, #17121d, #0e0d13 66%);
+  border-bottom-color: rgba(177, 146, 197, 0.2);
+}
+
+.faith-hero-grid {
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 7vw, 7rem);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+  min-height: min(720px, calc(100svh - 76px));
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+.faith-page h1 {
+  font-size: clamp(3.3rem, 7vw, 6.7rem);
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+  margin: 0;
+  max-width: 760px;
+}
+
+.faith-lede {
+  color: var(--faith-muted);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  line-height: 1.35;
+  margin: 1.8rem 0 0;
+  max-width: 42rem;
+}
+
+.faith-emblem {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.32));
+  height: auto;
+  justify-self: center;
+  max-width: 360px;
+  width: 100%;
+}
+
+.faith-account {
+  background: rgba(17, 19, 24, 0.94);
+}
+
+.faith-page-dark .faith-account {
+  background: #100f15;
+}
+
+.faith-account-kicker {
+  color: var(--faith-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.faith-account h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+  margin: 0 0 2rem;
+}
+
+.faith-account p:not(.faith-account-kicker) {
+  color: #d0cbc2;
+  font-size: clamp(1.05rem, 1.6vw, 1.18rem);
+  line-height: 1.85;
+  margin: 0;
+}
+
+.faith-account p + p {
+  margin-top: 1.5rem;
+}
+
+.faith-between {
+  background:
+    linear-gradient(90deg, rgba(227, 189, 112, 0.07), transparent 45%),
+    #0c0d10;
+  border-top: 1px solid rgba(199, 154, 71, 0.16);
+  text-align: center;
+}
+
+.faith-page-dark .faith-between {
+  background:
+    linear-gradient(90deg, rgba(103, 73, 123, 0.11), transparent 45%),
+    #0b0a0f;
+  border-top-color: rgba(177, 146, 197, 0.17);
+}
+
+.faith-between h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.12;
+  margin: 0 auto 2rem;
+}
+
+.faith-switch-dark {
+  background: linear-gradient(135deg, #c7b0d5, #80638f);
+  color: #130f16;
+}
+
+.faith-switch-light {
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+}
+
 .mailerlite-form-shell {
   min-height: 120px;
 }
@@ -1916,6 +2173,45 @@ img {
 
   .explore-block-grid {
     grid-template-columns: 1fr;
+  }
+
+  .faith-gateway-banner {
+    aspect-ratio: 4 / 3;
+  }
+
+  .faith-gateway-banner img {
+    object-position: center;
+  }
+
+  .faith-gateway-content {
+    margin-top: -3.5rem;
+  }
+
+  .faith-gateway-actions,
+  .faith-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faith-choice {
+    min-height: 8rem;
+  }
+
+  .faith-hero-grid {
+    min-height: auto;
+    text-align: center;
+  }
+
+  .faith-hero-copy {
+    order: 2;
+  }
+
+  .faith-emblem {
+    max-width: min(58vw, 300px);
+    order: 1;
+  }
+
+  .faith-lede {
+    margin-inline: auto;
   }
 
   .about-hero-grid,
