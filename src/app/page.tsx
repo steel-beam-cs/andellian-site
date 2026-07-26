@@ -86,8 +86,11 @@ export default function Home() {
             <p className="eyebrow">Book One of The Scar of Andellian</p>
             <h2 id="book-heading">Forge and Shadow</h2>
             <blockquote>
-              They were days from all their dreams coming true when the dead
-              came to River’s Crest.
+              Every light casts a shadow.
+              <br />
+              <br />
+              They had built a nearly perfect life together. Then the dead came to
+              River’s Crest.
             </blockquote>
             <div className="prose">
               <p>
