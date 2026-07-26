@@ -98,8 +98,11 @@ export default function ForgeAndShadowPage() {
               Book introduction
             </h2>
             <blockquote>
-              They were days from all their dreams coming true when the dead
-              came to River’s Crest.
+              Every light casts a shadow.
+              <br />
+              <br />
+              They had built a nearly perfect life together. Then the dead came to
+              River’s Crest.
             </blockquote>
             <div className="prose prose-single">
               <p>
