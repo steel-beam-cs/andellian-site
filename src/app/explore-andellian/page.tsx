@@ -113,6 +113,87 @@ export default function ExploreAndellianPage() {
         </section>
 
         <section
+          className="faith-gateway"
+          aria-labelledby="faith-gateway-heading"
+        >
+          <div className="faith-gateway-mobile-emblems" aria-hidden="true">
+            <Image
+              alt=""
+              className="faith-gateway-mobile-emblem faith-gateway-mobile-emblem-light"
+              height={720}
+              sizes="34vw"
+              src="/images/temple-of-light-emblem.webp"
+              width={720}
+            />
+            <Image
+              alt=""
+              className="faith-gateway-mobile-emblem faith-gateway-mobile-emblem-dark"
+              height={720}
+              sizes="34vw"
+              src="/images/temple-of-darkness-emblem.webp"
+              width={720}
+            />
+          </div>
+          <div className="site-shell faith-gateway-content">
+            <p className="eyebrow">Faith and the Divine</p>
+            <h2 id="faith-gateway-heading">
+              <span>Two Histories.</span>
+              <span>One World.</span>
+            </h2>
+            <p className="faith-gateway-intro">
+              The Temple of Light teaches that truth must be brought into the
+              open before it can be trusted.
+            </p>
+            <p>
+              The Temple of Darkness preserves another teaching: that some
+              truths cannot be understood through exposure alone.
+            </p>
+            <div className="faith-gateway-cadence">
+              <p>
+                One looks outward.
+                <br />
+                One looks within.
+              </p>
+              <p>
+                Both teach history.
+                <br />
+                Both teach theology.
+              </p>
+            </div>
+            <p>
+              Both claim to preserve what the other has forgotten—or chosen to
+              conceal.
+            </p>
+            <p>
+              These are mortal accounts, preserved by mortal institutions.
+              <br />
+              Whether the gods themselves would recognize every word is a
+              question no priest has answered.
+            </p>
+            <p className="faith-gateway-invitation">
+              Read both accounts. Decide what you believe.
+            </p>
+            <div className="faith-gateway-actions">
+              <Link className="faith-choice faith-choice-light" href="/faith/light">
+                <strong>
+                  Enter the Light
+                  <ArrowIcon />
+                </strong>
+              </Link>
+              <Link
+                className="faith-choice faith-choice-dark"
+                href="/faith/darkness"
+              >
+                <strong>
+                  Hear the Other History
+                  <ArrowIcon />
+                </strong>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section
           className="section explore-closing"
           aria-labelledby="explore-closing-heading"
         >
