@@ -116,30 +116,65 @@ export default function ExploreAndellianPage() {
           className="faith-gateway"
           aria-labelledby="faith-gateway-heading"
         >
-          <div className="faith-gateway-banner" aria-hidden="true">
+          <div className="faith-gateway-mobile-emblems" aria-hidden="true">
             <Image
               alt=""
-              fill
-              sizes="100vw"
-              src="/images/faith-light-darkness-banner.webp"
+              className="faith-gateway-mobile-emblem faith-gateway-mobile-emblem-light"
+              height={720}
+              sizes="34vw"
+              src="/images/temple-of-light-emblem.webp"
+              width={720}
+            />
+            <Image
+              alt=""
+              className="faith-gateway-mobile-emblem faith-gateway-mobile-emblem-dark"
+              height={720}
+              sizes="34vw"
+              src="/images/temple-of-darkness-emblem.webp"
+              width={720}
             />
           </div>
           <div className="site-shell faith-gateway-content">
             <p className="eyebrow">Faith and the Divine</p>
-            <h2 id="faith-gateway-heading">Two Histories. One World.</h2>
+            <h2 id="faith-gateway-heading">
+              <span>Two Histories.</span>
+              <span>One World.</span>
+            </h2>
             <p className="faith-gateway-intro">
-              In Andellian, faith is not merely a matter of worship. It shapes
-              law, memory, power, and the histories each generation inherits.
-              The Temples of Light and Darkness tell the same world in very
-              different ways.
+              The Temple of Light teaches that truth must be brought into the
+              open before it can be trusted.
             </p>
             <p>
-              Neither account is offered here as the whole truth. Enter one,
-              then hear the other.
+              The Temple of Darkness preserves another teaching: that some
+              truths cannot be understood through exposure alone.
+            </p>
+            <div className="faith-gateway-cadence">
+              <p>
+                One looks outward.
+                <br />
+                One looks within.
+              </p>
+              <p>
+                Both teach history.
+                <br />
+                Both teach theology.
+              </p>
+            </div>
+            <p>
+              Both claim to preserve what the other has forgotten—or chosen to
+              conceal.
+            </p>
+            <p>
+              These are mortal accounts, preserved by mortal institutions.
+              <br />
+              Whether the gods themselves would recognize every word is a
+              question no priest has answered.
+            </p>
+            <p className="faith-gateway-invitation">
+              Read both accounts. Decide what you believe.
             </p>
             <div className="faith-gateway-actions">
               <Link className="faith-choice faith-choice-light" href="/faith/light">
-                <span>Temple of Light</span>
                 <strong>
                   Enter the Light
                   <ArrowIcon />
@@ -149,7 +184,6 @@ export default function ExploreAndellianPage() {
                 className="faith-choice faith-choice-dark"
                 href="/faith/darkness"
               >
-                <span>Temple of Darkness</span>
                 <strong>
                   Hear the Other History
                   <ArrowIcon />
