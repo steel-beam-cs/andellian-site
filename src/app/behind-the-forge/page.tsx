@@ -224,6 +224,71 @@ export default function BehindTheForgePage() {
           </figure>
         </section>
 
+        <section className="forge-section section" aria-labelledby="conversation-ended-heading">
+          <div className="site-shell forge-reading">
+            <p className="eyebrow">The project had to survive the chat</p>
+            <h2 id="conversation-ended-heading">The Day the Conversation Ended</h2>
+            <p className="forge-emphasis">The first time a conversation reached its limit, I panicked.</p>
+            <p>
+              For months, the work had lived inside one long exchange: chapter notes,
+              revisions, decisions about characters and magic, and the private logic of
+              a world I had carried for fifteen years. Then the conversation stopped. I
+              could not continue typing into it. For a few terrible minutes, it felt less
+              like a software limit and more like the door to the workshop had closed
+              with the manuscript still inside.
+            </p>
+            <p>
+              I moved into ChatGPT Work, tried to reconstruct the project, and began
+              rebuilding the context piece by piece—what had been approved, which
+              files controlled, what could not be revealed yet, and how the voice was
+              supposed to sound. Only later did I discover that I could return to a
+              normal conversation and continue. The project had not vanished. The
+              collaboration had not vanished. But the fear had done useful damage.
+            </p>
+            <blockquote className="forge-pull">The conversation was not the project.</blockquote>
+            <p>
+              A manuscript this large could not depend upon one chat, one remembered
+              summary, or one file with an impressive name. We began building canon
+              bibles, revision ledgers, source hierarchies, versioned masters, handoff
+              prompts, and recovery packages. Every new conversation had to know which
+              manuscript controlled, which decisions were locked, and which mysteries
+              were still meant to remain mysteries.
+            </p>
+            <p>
+              Those systems did not appear because we were brilliantly organized from
+              the beginning. They appeared because I got scared.
+            </p>
+            <p>
+              And that fear changed the way we worked. The collaboration became more
+              durable, more disciplined, and more honest about its own limits. I learned
+              to ask not only whether a revision was good, but whether it had actually
+              been saved in the right file. ChatGPT learned—sometimes after being
+              corrected—that a remembered decision was not the same thing as verified
+              text.
+            </p>
+            <p>
+              The moment was frustrating, embarrassing, and eventually funny. It was
+              also the day the project stopped living inside a conversation and became
+              something built to survive beyond one.
+            </p>
+          </div>
+          <div className="site-shell forge-evidence-single">
+            <EvidenceDisclosure label="See the moment I realized the project survived">
+              <p>
+                <strong>Alexander:</strong> Do you still remember everything?
+              </p>
+              <p>
+                <strong>ChatGPT:</strong> Yes—I still remember the book and the major
+                decisions we’ve made.
+              </p>
+              <p className="evidence-outcome">
+                The moment Alexander discovered the project—and the collaboration—had
+                survived the move.
+              </p>
+            </EvidenceDisclosure>
+          </div>
+        </section>
+
         <section className="forge-section forge-hammer section" aria-labelledby="hammer-heading">
           <div className="site-shell forge-feature-grid">
             <div className="forge-feature-image">
