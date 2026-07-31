@@ -122,6 +122,7 @@ export default function ForgeAndShadowPage() {
             <p className="book-meta">
               <em>Book One of The Scar of Andellian</em>
               <span>Coming November 17, 2026</span>
+              <span>Paperback ISBN: 979-8-9971642-0-1</span>
             </p>
           </div>
         </section>

@@ -2353,6 +2353,10 @@ img {
     order: -1;
   }
 
+  .book-hero-grid .cover-rule {
+    transform: translate(clamp(18px, 6vw, 30px), 10px);
+  }
+
   .portrait-frame,
   .portrait-clean {
     min-height: 520px;
