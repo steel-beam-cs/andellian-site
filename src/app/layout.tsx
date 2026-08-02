@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { VercelAnalytics } from "@/components/vercel-analytics";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -54,7 +54,7 @@ l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],
 n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
 ml('account','2530319');`}
         </Script>
-        <Analytics />
+        <VercelAnalytics />
       </body>
     </html>
   );
