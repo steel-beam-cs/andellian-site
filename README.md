@@ -26,9 +26,12 @@ npm run build
 - **Andellian Readers** uses double opt-in.
 - The active automation delivers *The Eighth Morning of Bellweather*.
 - MailerLite signup is centralized on `/tales-of-the-stranger#free-tale`.
+- **Vercel Web Analytics** is enabled through `@vercel/analytics`.
+- Private owner analytics opt-out controls remain in place.
+- Advertising remains disabled unless separately approved.
 - **`/privacy`** contains the approved privacy policy.
 - **`/forge-and-shadow`** contains the approved blurb, rabbit engraving vignette,
-  and complete Chapter Fifteen excerpt.
+  complete Chapter Fifteen excerpt, release date, and paperback ISBN.
 - **`/about`** is implemented with the clean portrait and author story.
 - **`/behind-the-forge`** contains the approved collaboration, continuity,
   production, and transparency narrative.
@@ -40,8 +43,6 @@ npm run build
 - The Behind the Forge section uses the approved quiet forge illustration.
 - Approved Andellian Press mark, full logo, and favicon assets are installed
   under `public/images/` and `src/app/icon.png`.
-- Analytics and advertising remain intentionally disabled unless separately
-  approved.
 
 ## Routes
 
@@ -51,3 +52,6 @@ npm run build
 - `/explore-andellian` — spoiler-safe world introduction
 - `/tales-of-the-stranger` — Tales of the Stranger and free-tale signup
 - `/privacy` — privacy policy
+
+See [`OPERATIONS.md`](./OPERATIONS.md) for the canon-aware branch, Vercel preview,
+pull-request, and production-verification workflow.
