@@ -22,9 +22,9 @@ export default function PrivacyPage() {
         <div className="site-shell reading-column">
           <h1>Privacy Policy</h1>
           <p className="legal-meta">
-            <strong>Effective date:</strong> July 24, 2026
+            <strong>Effective date:</strong> August 3, 2026
             <br />
-            <strong>Last updated:</strong> July 24, 2026
+            <strong>Last updated:</strong> August 3, 2026
           </p>
 
           <p>
@@ -104,11 +104,16 @@ export default function PrivacyPage() {
 
           <h2>Cookies and analytics</h2>
           <p>
-            At launch, Andellian.com does not use advertising cookies or a
-            separate advertising or analytics platform. MailerLite and the
-            site’s hosting provider may use technical cookies or similar
-            technologies that are necessary for their services, security, and
-            performance.
+            We use Vercel Web Analytics to understand aggregate site traffic
+            and performance, including page views, referrers, general location,
+            browser, operating system, and device type. Vercel states that Web
+            Analytics stores anonymized data and does not use cookies.
+          </p>
+          <p>
+            We do not use Vercel Web Analytics for advertising, and advertising
+            remains disabled. MailerLite and other service providers may use
+            cookies or similar technologies as described above to provide their
+            services.
           </p>
           <p>
             If additional analytics, advertising, or cookie-based services are
