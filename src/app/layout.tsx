@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { VercelAnalytics } from "@/components/vercel-analytics";
 import "./globals.css";
 
@@ -55,6 +56,7 @@ n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.maile
 ml('account','2530319');`}
         </Script>
         <VercelAnalytics />
+        <SpeedInsights />
       </body>
     </html>
   );
