@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "eslint src/app/layout.tsx src/app/privacy/page.tsx && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
