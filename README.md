@@ -27,6 +27,7 @@ npm run build
 - The active automation delivers *The Eighth Morning of Bellweather*.
 - MailerLite signup is centralized on `/tales-of-the-stranger#free-tale`.
 - **Vercel Web Analytics** is enabled through `@vercel/analytics`.
+- **Vercel Speed Insights** is enabled through `@vercel/speed-insights`.
 - Private owner analytics opt-out controls remain in place.
 - Advertising remains disabled unless separately approved.
 - **`/privacy`** contains the approved privacy policy.
