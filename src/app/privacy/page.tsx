@@ -74,7 +74,10 @@ export default function PrivacyPage() {
             </li>
             <li>maintain and protect the site and mailing list;</li>
             <li>respond to messages and requests;</li>
-            <li>understand general newsletter performance; and</li>
+            <li>
+              understand aggregate site traffic, site performance, and
+              newsletter performance; and
+            </li>
             <li>comply with applicable legal obligations.</li>
           </ul>
           <p>We do not sell or rent subscriber information.</p>
@@ -102,15 +105,24 @@ export default function PrivacyPage() {
             included in each mailing-list email.
           </p>
 
-          <h2>Cookies and analytics</h2>
+          <h2>Cookies, analytics, and performance</h2>
           <p>
-            We use Vercel Web Analytics to understand aggregate site traffic
-            and performance, including page views, referrers, general location,
-            browser, operating system, and device type. Vercel states that Web
-            Analytics stores anonymized data and does not use cookies.
+            We use Vercel Web Analytics to understand aggregate site traffic,
+            including page views, referrers, general location, browser,
+            operating system, and device type. Vercel states that Web Analytics
+            stores anonymized data and does not use cookies.
           </p>
           <p>
-            We do not use Vercel Web Analytics for advertising, and advertising
+            We use Vercel Speed Insights to measure how pages perform for real
+            visitors. Speed Insights may report anonymous performance data such
+            as route and URL, network speed, browser, device type and operating
+            system, country, Web Vital measurements and attribution, SDK
+            information, and event time. Vercel states that Speed Insights does
+            not collect or store information that would identify a visitor or
+            reconstruct a browsing session across pages.
+          </p>
+          <p>
+            We do not use these Vercel services for advertising, and advertising
             remains disabled. MailerLite and other service providers may use
             cookies or similar technologies as described above to provide their
             services.
